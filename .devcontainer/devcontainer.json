@@ -3,6 +3,13 @@
 	"hostRequirements": {
 	  "cpus": 2
 	},
+	"waitFor": "onCreateCommand",
+	"updateContentCommand": "npm install",
+	"postCreateCommand": "",
+	"postAttachCommand": {
+	  "server": "npm run build",
+	  "server": "npm run serve-web"
+	},
 	"portsAttributes": {
 	  "8000": {
 		"label": "Application",
