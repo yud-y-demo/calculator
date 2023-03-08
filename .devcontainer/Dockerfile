@@ -13,5 +13,3 @@ RUN apt-get update && apt-get -y install python make g++
 
 # [Optional] Uncomment if you want to install more global node modules
 # RUN su node -c "npm install -g <your-package-list-here>"
-RUN su node -c "npm install"
-RUN su node -c "npm run build"
