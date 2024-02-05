@@ -36,6 +36,12 @@ export default function () {
       </div>
 
       <div className='keyboard-row'>
+        <Key keyType='operator' keyValue='power' keySymbol='x²' />
+        <Key keyType='operator' keyValue='root' keySymbol='√' />
+        <Key keyType='operator' keyValue='modulus' keySymbol='%' />
+      </div>
+
+      <div className='keyboard-row'>
         <Key keyType='action' keyValue='back' keySymbol='<<' />
         <Key keyType='action' keyValue='equal' keySymbol='=' />
       </div>
