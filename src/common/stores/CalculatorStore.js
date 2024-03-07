@@ -231,6 +231,22 @@ function processCalculation() {
         }
         _symbolKeyTyped = '÷';
         break;
+      case 'power':
+        calculation = Math.pow(_numbersFromBuffer[0], _numbersFromBuffer[1]);
+        _symbolKeyTyped = '^';
+        break;
+      case 'root':
+        calculation = Math.pow(_numbersFromBuffer[0], 1 / _numbersFromBuffer[1]);
+        _symbolKeyTyped = '√';
+        break;
+      case 'modulus':
+        if (_numbersFromBuffer[1] === 0) {
+          calculation = 'Error';
+        } else {
+          calculation = _numbersFromBuffer[0] % _numbersFromBuffer[1];
+        }
+        _symbolKeyTyped = '%';
+        break;
       default:
     }
     _lastCalculation = {
